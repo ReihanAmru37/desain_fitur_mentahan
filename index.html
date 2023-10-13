@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design & Preset</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font by Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Sacramento&family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Countdown by SimplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Display 1 Start -->
+    <section id="hero" class="hero">
+      <main>
+        <h4>UNDANGAN PERNIKAHAN</h4>
+        <h1>Zaki & Diana</h1>
+        <p>Akan Melakukan Resepsi Pernikahan Dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn" onclick="enableScroll()">OPEN</a>
+      </main>
+    </section>
+    <!-- Display 1 End -->
+
+    <!-- Display 2 Start -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Zaki & Diana</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WoyStudio</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galeri">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#hadiah">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              aliquid.
+            </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              maiores repellendus omnis maxime tempore quis?
+            </p>
+          </div>
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Moh. Muzaki Al Utsmani</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores illo vel provident maiores eius nihil.
+                  </p>
+                  <p>
+                    Putra dari Bapak M. Dahlan <br> dan <br> Ibu Nur Aeniyatin</p>
+                </div>
+                <div class="col-4">
+                  <img src="../desain_fitur_mentahan/img/Foto/Lanang.jpg" alt="desain" class="img-responsive rounded-circle" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../desain_fitur_mentahan/img/Foto/Wedok.jpg" alt="preset" class="img-responsive rounded-circle" />
+                </div>
+                <div class="col-8">
+                  <h3>Dian Afiani</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores illo vel provident maiores eius nihil.
+                  </p>
+                  <p>
+                    Putri dari Bapak Rasmadi <br> dan <br> Ibu Ilik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Display 2 End -->
+
+    <!-- Display 3 Start -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">Alamat: Gg. Sunan Kudus Ds. Sugihan RT. 005/RW. 005,
+              <br>Kec. Merakurak, Kab. Tuban</br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.4092080169785!2d111.95130429999999!3d-6.8414465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77a15f9dbf06cd%3A0x47385844e88258aa!2sGg.%20Sunan%20Kudus%2C%20Krajan%201%2C%20Sugihan%2C%20Kec.%20Merakurak%2C%20Kabupaten%20Tuban%2C%20Jawa%20Timur%2062355!5e0!3m2!1sid!2sid!4v1696990605879!5m2!1sid!2sid" class="maps"></iframe>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 11 November 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyukan seluruh prosesi.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 11 November 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyukan seluruh prosesi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Display 3 End -->
+
+    <!-- Display 4 Start -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Love Story</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur tenetur quisquam minima facilis? Molestiae!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/300/300);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>30 September 2015</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt provident sint quae assumenda a.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/301/301);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>30 September 2017</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt provident sint quae assumenda a.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/302/302);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>30 September 2021</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt provident sint quae assumenda a.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-img" style="background-image: url(https://picsum.photos/303/303);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Menikah</h3>
+                    <span>30 September 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sunt provident sint quae assumenda a.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Display 4 End -->
+
+    <!-- Display 5 Start -->
+    <section id="galeri" class="galeri">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Gallery Foto</h2>
+            <p>You can press</p>
+          </div>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Foto/1.jpg" class="img-galeri" alt="img1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Foto/2.jpg" class="img-galeri" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Foto/3.jpg" class="img-galeri" alt="img3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Foto/4.jpg" class="img-galeri" alt="img4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Display 5 End -->
+
+    <!-- Display 6 Start -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi Form Dibawah Ini Untuk Konfirmasi Kehadiran</p>
+          </div>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method ="POST" 
+        action ="https://script.google.com/macros/s/AKfycbxp2SLo8EZ0Hkgv6ZUyQKZtt7x5HuMgk8ud1Nc0gQkDrIAoO823Y0c2SsVpx-Eda8IW/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select class="form-control" id="status" name="status">
+                <option selected>Pilih Salah Satu</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Display 6 End -->
+
+    <!-- Display 7 Start -->
+    <section id="hadiah" class="hadiah">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <span>Ungkapan Tanda Terima Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur tenetur quisquam minima facilis? Molestiae!</p>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">BCA</div>
+              0123456789 - Reihan Amru
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">BNI</div>
+              9876543210 - Reihan Amru
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">Mandiri</div>
+              0123498765 - Reihan Amru
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">2023 WoyStudio. All Right Reserved.</small>
+            <small class="block">Desain By <a href="https://instagram.com/woy.studio?igshid=MzRlODBiNWFlZA==">WoyStudio.</a></small>
+
+            <ul>
+              <li><a href="https://instagram.com/woy.studio?igshid=MzRlODBiNWFlZA=="><i class="bi bi-instagram"></i></a></li>
+              <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="music" autoplay loop>
+        <source src="audio/Avenged Sevenfold Gunslinger.mp3" type="audio/mp3">
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none;">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+    <!-- Display 7 End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Countdown HTML Start -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 11, // required
+        day: 11, // required
+        hours: 9, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+    <!-- Countdown HTML End -->
+
+    <!--Javascript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

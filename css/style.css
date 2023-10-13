@@ -1,0 +1,641 @@
+:root {
+  --primary: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Display 1 Start*/
+body {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 5000px;
+}
+
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Foto/10.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow); 
+}
+
+.hero h4 {
+  font-size: 1.2rem;
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero a {
+  margin-top: 0.7rem;
+  color: var(--primary);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--primary);
+}
+/* Display 1 End*/
+
+/* Display 2 Start*/
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(0.2rem);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+background-color: #666;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 800px;
+  margin-top: -5.4rem;
+  padding-top: 8.5rem;
+  padding-bottom: 5rem;
+}
+
+.home h2 {
+  color: #f14e95;
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3 {
+  color: #0a0a0a;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  color: #0a0a0a;
+  font-size: 1.2rem;
+}
+
+.home .couple {
+  margin-top: 2rem;
+}
+
+.home .couple h3 {
+  font-family: "sacramento";
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.home .couple img {
+width: 100%;
+}
+/* Display 2 End*/
+
+/* Display 3 Start*/
+.info{
+  background-color: var(--bg);
+  color: white;
+  padding-top: 8.4rem;
+  padding-bottom: rem;
+  min-height: 1100px;
+}
+
+.info h2{
+  color: var(--primary);
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info .alamat{
+  font-size: 1.2rem;
+}
+
+.info .maps{
+  width: 100%;
+  height: 70%;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.info .description {
+  font-size: 1.2rem;
+}
+
+.info .card {
+  margin-top: 5rem;
+  margin-bottom: -4rem;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header{
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+  font-size: 1rem;
+}
+
+.info .card-footer{
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+}
+/* Display 3 End*/
+
+/* Display 4 Start*/
+.story{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.story span{
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story h2 {
+  margin-top: 1rem;
+  color: #f14e95;
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.story p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before{
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li{
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: '';
+  display: table;
+}
+
+.timeline li::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.timeline li .timeline-img{
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel{
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.timeline li .timeline-panel::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid white;
+  border-right: 0 solid white;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel{
+  width: 40%;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-left-width: 0;
+  border-right-width: 15px;
+  top: 80px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-left-width: 0;
+  border-right-width: 14px;
+  top: 81px;
+  left: -13px;
+  right: auto;
+}
+/* Display 4 End*/
+
+/* Display 5 Start*/
+.galeri{
+  background-color: white;
+  color: white;
+  margin: auto;
+  padding-top: 8.5rem;
+  padding-bottom: 5rem;
+  min-height: 750px;
+}
+
+.galeri span{
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.galeri h2 {
+  margin-top: 1rem;
+  color: #f14e95;
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.galeri p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.carousel-inner{
+  display: block;
+  align-items: center;
+  padding: 5rem 10% 5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.img-galeri{
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* Display 5 End*/
+
+/* Display 6 Start*/
+.rsvp {
+  background-color: darkgray;
+  color: black;
+  margin-top: -5rem;
+  padding-top: 8.5rem;
+  padding-bottom: 0rem;
+  min-height: 750px;
+}
+
+.rsvp h2 {
+  margin-top: 1rem;
+  color: #f14e95;
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.rsvp p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.rsvp button{
+  margin-top: 21px;
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.rsvp button:hover{
+  background-color: white;
+  color: var(--primary);
+  border: 1px solid white;
+}
+/* Display 6 End*/
+
+/* Display 7 Start*/
+.hadiah{
+  background-color: var(--primary);
+  padding-top: 10.5rem;
+  padding-bottom: 3rem;
+  min-height: 750px;
+}
+
+.hadiah span{
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.hadiah h2 {
+  margin-top: 1rem;
+  color: var(--bg);
+  font-family: "sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.hadiah p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer {
+  padding: 1.2rem;
+  background-color: #d34381;
+  color: white;
+}
+
+footer a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer li{
+  margin: 0.5rem;
+  list-style: none;
+  display: inline;
+}
+
+.audio-icon-wrapper{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Display 7 End*/
+
+
+/* Media Query */
+
+/* Dekstop */
+@media (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+
+  .timeline::before{
+    left: 60px;
+  }
+
+  .timeline li .timeline-img{
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel{
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+
+  .timeline li.timeline-inverted .timeline-img{
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li.timeline-inverted .timeline-panel{
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+
+  .info .maps{
+    width: calc((100% - 200px));
+    float: right;
+   }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-img{
+     width: 100px;
+     height: 100px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .timeline li .timeline-img{
+    width: 80px;
+    height: 80px;
+ }
+
+ .timeline li .timeline-panel{
+  width: 65%;
+  transform: translateX(-20px);
+ }
+
+ .timeline li.timeline-inverted .timeline-panel{
+  width: 65%;
+  transform: translateX(-20px);
+ }
+
+ .timeline li .timeline-panel::before{
+  top: 30px;
+ }
+
+ .timeline li .timeline-panel::after{
+  top: 31px;
+ }
+
+ .timeline li.timeline-inverted .timeline-panel::before{
+  top: 30px;
+ }
+
+ .timeline li.timeline-inverted .timeline-panel::after{
+  top: 31px;
+ }
+
+ .info .card{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
+
+ .info .maps{
+  width: 100% !important;
+  height: 50%;
+ }
+}
