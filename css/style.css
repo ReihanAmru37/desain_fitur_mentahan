@@ -1,7 +1,7 @@
 :root {
   --primary: #1d79b7;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --shadow: 5px 5px 50px rgba(0, 0, 0, 5);
 }
 
 /* Display 1 Start*/
@@ -43,7 +43,8 @@ body {
 .hero h1,
 .hero h4,
 .hero p {
-  text-shadow: var(--shadow); 
+  text-shadow: var(--shadow);
+  font-weight: 400;
 }
 
 .hero h4 {
@@ -171,8 +172,9 @@ width: 100%;
 .info .card {
   margin-top: 9rem;
   margin-bottom: -4rem;
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  color: black !important;
+  font-weight: 600;
   border: 1px solid #999;
 }
 
