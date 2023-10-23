@@ -731,9 +731,13 @@ footer li{
 }
 
 /* Mobile Phone */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   html {
     font-size: 60%;
+  }
+
+  .mynavbar .nav-link{
+    font-size: 1.5rem;
   }
 
   .timeline li .timeline-img{
