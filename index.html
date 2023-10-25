@@ -62,12 +62,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Zaki & Diana</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
@@ -314,7 +309,7 @@
     <!-- Display 5 End -->
 
     <!-- Display 6 Start -->
-  
+
     <!-- Display 6 End -->
 
     <!-- Display 7 Start -->
@@ -323,23 +318,61 @@
         <div class="row justify-content-center text-center">
           <div class="col-md-6">
             <h2>Kirim Hadiah</h2>
-            <p>Kami mencantumkan alamat no rekening kami dibawah, untuk memudahkan bagi yang ini mengirimkan hadiah</p>
+            <p>Kami mencantumkan no. rekening kami dibawah, untuk memudahkan bagi yang ini mengirimkan hadiah</p>
           </div>
         </div>
+
         <div class="row text-center justify-content-center">
           <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <div class="fw-bold">BCA</div>
-              8241077012 - DIAN AFIANI
-            </li>
-            <li class="list-group-item">
-              <div class="fw-bold">Alamat Bpk. Rasmadi</div>
-              <img src="assets/img/hadiah.jpg" alt="Saweria QR" class="img-thumbnail" width="150" />
-            </li>
-          </ul>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                8241077012 - DIAN AFIANI
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">MANDIRI</div>
+                1780005423468 - Moh. Muzaki Al Utsman
+              </li>      
+            </ul>
           </div>
         </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 col-10">
+            <div class="card text-center text-bg-light">
+              <form class="row row-cols-md-1 g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbwBXeSNd95lmj-Da9CalKpWlf8gd7JURvy1IPgF0bnr8ObyRR_sR8b07vQ8ghAZjx9A/exec" id="my-form">
+                <div class="list col-12">
+                  <div class="mb-2">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                  </div>
+                </div>
+                <div class="list col-12">
+                  <div class="mb-2">
+                    <label for="jumlah" class="form-label">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah" name="jumlah">
+                  </div>
+                </div>
+                <div class="list col-12">
+                  <div class="mb-2">
+                    <label for="rekening" class="form-label">Pilih Rekening</label>
+                    <select class="form-select" id="rekening" name="rekening">
+                      <option selected>Pilih Salah Satu</option>
+                      <option value="bca">BCA</option>
+                      <option value="mandiri">MANDIRI</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a href="whatsapp://send?text=Hello&phone=+62882300341251">
+                    <button class="btn">Konfirmasi</button>
+                  </a>
+                </div>
+              </form>  
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -360,7 +393,7 @@
 
     <div id="audio-container">
       <audio id="music" autoplay loop>
-        <source src="audio/Joseph Vincent Only You.mp3" type="audio/mp3">
+        <!--<source src="audio/Joseph Vincent Only You.mp3" type="audio/mp3">-->
       </audio>
       <div class="audio-icon-wrapper" style="display: none;">
         <i class="bi bi-disc"></i>
@@ -372,7 +405,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
-    <!-- Countdown HTML Start -->
+    <!-- Countdown JS Start -->
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2023, // required
@@ -388,7 +421,27 @@
         },
       });
     </script>
-    <!-- Countdown HTML End -->
+    <!-- Countdown JS End -->
+
+    <!-- Hadiah JS Start -->
+    <script>
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Konfirmasi Kehadiran Berhasil Terkirim.");
+          })
+        });
+      });
+    </script>
+    <!-- Hadiah JS End -->
 
     <!--Javascript-->
     <script src="js/script.js"></script>

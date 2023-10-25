@@ -2,6 +2,7 @@
   --primary: #1d79b7;
   --bg: #0a0a0a;
   --shadow: 5px 5px 50px rgba(0, 0, 0, 5);
+  --text : #4fb6c7;
 }
 
 /* Display 1 Start*/
@@ -374,201 +375,76 @@ width: 100%;
   font-size: 1rem;
   font-weight: 300;
 }
-
-body {
-  background-color: #eee;
-}
-.hello {
-  opacity: 1 !important;
-}
-.full {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.full .content {
-  background-color: rgba(0,0,0,0.75) !important;
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
-.full .content img {
-  left: 50%;
-  transform: translate3d(0, 0, 0);
-  animation: zoomin 1s ease;
-  max-width: 80%;
-  max-height: 80%;
-  margin: auto;
-}
-.byebye {
-  opacity: 0;
-}
-.byebye:hover {
-  transform: scale(0.2) !important;
-}
-
-.gallery {
-  display: grid;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 8px;
-}
-.gallery img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 16px #333;
-  transition: all 1.5s ease;
-}
-.gallery img:hover {
-  box-shadow: 0 0 32px #333;
-}
-.gallery .content {
-  padding: 4px;
-}
-.gallery .gallery-item {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.gallery .gallery-item:hover {
-  transform: scale(1.025);
-}
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
-}
-@media (max-width: 400px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  }
-}
-@-moz-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@-o-keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
-@keyframes zoomin {
-  0% {
-    max-width: 50%;
-    transform: rotate(-30deg);
-    filter: blur(4px);
-  }
-  30% {
-    filter: blur(4px);
-    transform: rotate(-80deg);
-  }
-  70% {
-    max-width: 50%;
-    transform: rotate(45deg);
-  }
-  100% {
-    max-width: 100%;
-    transform: rotate(0deg);
-  }
-}
 /* Display 5 End*/
 
 /* Display 6 Start*/
 .rsvp {
-  background-color: darkgray;
+  background-color: white;
   color: black;
   margin-top: -5rem;
   padding-top: 8.5rem;
-  padding-bottom: 0rem;
-  min-height: 750px;
+  min-height: 700px;
 }
 
 .rsvp h2 {
   margin-top: 1rem;
-  color: #f14e95;
+
+  color: var(--text);
   font-family: "sacramento";
   font-size: 5rem;
   font-weight: bold;
 }
 
 .rsvp p{
-  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
-.rsvp button{
-  margin-top: 21px;
+.rsvp .card {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+  background-color: #f5f5f5 !important;
+  color: black !important;
+  font-weight: 600;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 10px rgba(80, 80, 80, 5);
+}
+
+.rsvp .card form{
+  padding-top: 1rem;
+}
+
+.rsvp .card .list{
+  box-sizing: border-box;
+}
+
+.rsvp .card button{
+  margin-top: 1rem;
   background-color: var(--primary);
   color: white;
   border: 1px solid var(--primary);
 }
 
-.rsvp button:hover{
-  background-color: white;
+.rsvp .card button:hover{
+  background-color: lightgray;
   color: var(--primary);
-  border: 1px solid white;
+  border: 1px solid lightgray;
 }
 /* Display 6 End*/
 
 /* Display 7 Start*/
 .hadiah{
-  background-color: #ffffff;
+  background-color: white;
   padding-top: 10.5rem;
   padding-bottom: 3rem;
-  min-height: 750px;
+  min-height: 650px;
 }
 
 .hadiah span{
@@ -591,6 +467,41 @@ body {
 .hadiah p{
   font-size: 1rem;
   font-weight: 300;
+}
+
+.hadiah li{
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 10px rgba(80, 80, 80, 5);
+}
+
+.hadiah .card {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+  background-color: #f5f5f5 !important;
+  color: black !important;
+  font-weight: 600;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 10px rgba(80, 80, 80, 5);
+}
+
+.hadiah .card form{
+  padding-top: 1rem;
+}
+
+.hadiah .card button{
+  margin-top: 1rem;
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.hadiah .card button:hover{
+  background-color: lightgray;
+  color: var(--primary);
+  border: 1px solid lightgray;
 }
 
 footer {
@@ -798,5 +709,10 @@ footer li{
  .info .maps{
   width: 100% !important;
   height: 50%;
+ }
+
+ .hadiah li{
+  margin-left: 4rem;
+  margin-right: 4rem;
  }
 }
